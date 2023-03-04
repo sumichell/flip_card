@@ -36,6 +36,7 @@ class AnimationCard extends StatelessWidget {
           transform.rotateY(animation!.value);
         }
         return Transform(
+          filterQuality: FilterQuality.low,
           transform: transform,
           alignment: Alignment.center,
           child: child,
